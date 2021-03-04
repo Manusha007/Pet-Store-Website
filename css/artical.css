@@ -1,0 +1,98 @@
+body {
+  font-family:  'IBM Plex Sans', sans-serif;
+}
+
+
+body {
+  background-color: #ffffcc;
+  
+}
+p {
+  color: black;
+}
+h1 {
+  
+  font-family: verdana;
+  font-size: 300%;
+
+}
+article {
+                
+  background-color: #d0d2ff;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  margin-bottom: 10px;
+  margin-right: 150px;
+  margin-left: 150px;
+                
+            }
+.reading{
+  border: 1px solid black; 
+  padding: 10px;
+   background-color: #cc99ff;
+}			
+footer {
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+	background: #Aqua;	
+	line-height: 2.5rem;
+	padding: 15px;
+}
+.footer_p {
+	color: #ff00ff;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 0 35px;
+}
+.footer_des {
+	font-weight: 300;
+	color: #660066;
+	padding-left: 2px;
+	letter-spacing: 0.1rem;
+
+}
+.footer_sep {
+	font-weight: 300;
+	color: #cc66ff;
+	margin: 0 5px;
+}
+.footer_sep--large {
+    color: rgb(0, 68, 123);
+	font-size: 38px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#2f2626;
+}
+
+.topnav a {
+  float: left;
+  color: azure;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color:  #5f4c4c;
+  color: azure;
+}
+
+.topnav a.active {
+  background-color: #c5aa6a;
+  color: azure;
+}
+
+
+/* section inside the top navigation */
+.topnav-right {
+  float: right;
+  background-color:#Aqua;
+}
+
