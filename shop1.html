@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700|IBM+Plex+Sans:200,300,400,500,600,700|Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style/common_css.css">
+        <link rel="stylesheet" type="text/css" href="style/typography.css">
+        <link rel="stylesheet" type="text/css" href="style/shop.css">
+        
+        <title>Puddle Shop</title>
+
+    </head>
+    <body>
+
+    <div class="topNav">
+        <a class = "pawsMatter">Paws Matter</a>
+        <a href="page.html">Home</a>
+        <a href="article1.html">Articles</a>
+        <a href="Quiz.html">Quiz</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="About.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="site%20map.html">Site map</a>
+        <div class="topNav/right">
+            <a href="shop1.html">Shop</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <button class="reset font_size_change" aria-label="reset font size"><img src="image/icon/reset.png" class="reset_icon" alt="reset font size"></button>
+        <button class="font_size_increase font_size_change" aria-label="increase font size" tabindex="1"><img src="image/icon/zoom_in.png" class="zoom_icon" alt="increase font size"></button>
+        <button class="font_size_decrease font_size_change" aria-label="reduce font size" tabindex="2"><img src="image/icon/zoom_out.png" class="zoom_icon" alt="decrease font size"></button>
+    </div>
+        <a href="#cart" class="cart_link" tabindex="4"><button class="cart_btn" aria-label="go to cart"><img src="pics/icons/cart.png" 
+        class="cart_icon" alt="go to cart"></button></a>
+        <div class="zoom_group">
+            <button class="reset font_size_change" aria-label="reset font size"><img src="pics/icons/reset.png" 
+                class="reset_icon" alt="reset font size"></button>
+                <button class="font_size_increase font_size_change" aria-label="increase font size" tabindex="1"><img src="pics/icons/zoom_in.png" 
+                class="zoom_icon" alt="increase font size"></button>
+                <button class="font_size_decrease font_size_change" aria-label="reduce font size" tabindex="2"><img src="pics/icons/zoom_out.png" 
+                class="zoom_icon" alt="decrease font size"></button>
+        </div>
+        <div class="shop_banner">
+            <div class="banner_message">
+                <h3>Amazing Gifts For <br>Your Lovely Puddle</h3>
+                <p class="p1">Buy toys, medicine & food for your little 
+                doggy & show your love!!!</p>
+            </div>
+            <a class="banner_btn" href="#col2">SHOP NOW!</a>
+        </div>
+        <div class="container">
+            <div class="col1">
+                <div class="form_container">
+                    <div class="form_heading">
+                        <p class="p1 medium" style = "color: #0472D9;">Fill & Order</p>
+                    </div>
+                    <form id="order" onsubmit="return false">
+                        <label for="firstname" class="order_lbl">Full Name<span class="req_star">*</span></label>
+                        <input class="shop_form_txt required" id="firstname" name="firstname" type="text" placeholder="name">
+                        <div class="form_feedback">
+                            <span class="validation required_name">This field is required*</span>
+                        </div>
+                        <label for="email" class="order_lbl">Email<span class="req_star">*</span></label>
+                        <!-- here I changed the type to text since we were told not to use html validation -->
+                        <input class="shop_form_txt required" id="email" name="email" type="text" placeholder="example@domain.com">
+                        <div class="form_feedback">
+                            <span class="validation required_email">This field is required*</span>
+                            <span class="validation wrong_format_email">This is not a valid email address</span>
+                        </div>
+                        
+                        
+                        <label for="phone" class="order_lbl">Phone Number<span class="req_star">*</span></label>
+                        <input class="shop_form_txt required" id="phone" name="phone" type="tel" placeholder="0123456789">
+                        <div class="form_feedback">
+                            <span class="validation required_phone">This field is required*</span>
+                            <span class="validation not_allowed_number">Only numbers allowed</span>
+                            <span class="validation wrong_format_tel">This is not a valid phone number</span>
+                        </div>
+                        
+                        
+                        <label for="address" class="order_lbl">Address<span class="req_star">*</span></label>
+                        <textarea class="required" id="address" name="address"></textarea>
+                        <div class="form_feedback">                        
+                            <span class="validation required_address">This field is required*</span>
+                        </div>
+                        <input type="submit" class="form_btn" id="submit"  value="Place Order">
+                        <input type="reset" class="form_btn form_reset">
+                    </form>
+                </div>
+            </div>
+            <div class="col2" id="col2">
+                <div class="undone_notify">
+                    <span class="undone">Action undone</span>
+                </div>
+                <div class="shop_container" id="shop">
+                    <div class="shop_heading">
+                        <h3 class="primary_black">Find Products To Buy</h3>
+                        <hr>
+                        <label class="category" for="category">Category: </label> 
+                        <select id="category">
+                            <option value="all">All</option>
+                            <option value="food">Food</option>
+                            <option value="toy">Toys</option>
+                            <option value="med">Medicine</option>
+                        </select>
+                    </div>
+                    <div class="showcase">    
+                        <!-- <div class="item">
+                            <img class="itm_img"src="pics/shop/food/pedigree.png">
+                            <div class="item_des">
+                                <hr class="item_title_sep">
+                                <p class="item_title_p">Pedigree Adult Dog Food</p>
+                                <hr class="item_title_sep">
+                            </div>
+                            <p class="item_price_p">PRICE: <span class="currency">RS <span class="itm_price">3000</span></span></p>
+                            <div class="quantity">
+                                <p style="font-size: 1.2rem; font-weight: 600; color: #555555;">Quantity:</p>
+                                <div class="increaser">
+                                    <button class="counter increment">+</button>
+                                    <input type="text" value="1" class="qnt_input" readonly>
+                                    <button class="counter decrement">-</button>
+                                </div>
+                            </div>
+                            <div class="add_item">
+                                <button class="add" id="add2">Add Item</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itm_img"src="pics/shop/food/drools.jpg">
+                            <div class="item_des">
+                                <hr class="item_title_sep">
+                                <p class="item_title_p">Drools Puppy Food</p>
+                                <hr class="item_title_sep">
+                            </div>
+                            <p class="item_price_p">PRICE: <span class="currency">RS <span class="itm_price">2000</span></span></p>
+                            <div class="quantity">
+                                <p style="font-size: 1.2rem; font-weight: 600; color: #555555;">Quantity:</p>
+                                <div class="increaser">
+                                    <button class="counter increment">+</button>
+                                    <input type="text" value="1" class="qnt_input" readonly>
+                                    <button class="counter decrement">-</button>
+                                </div>
+                            </div>
+                            <div class="add_item">
+                                <button class="add">Add Item</button>
+                            </div>
+                        </div>
+						</div> -->
+                    </div>
+                </div>
+                <div class="added_notify">
+                     
+                </div>
+            </div>
+            <div class="cart_modal">
+                <div class="cart_container">
+                    <button class="close_cart">&#10006;</button>  
+                    <p class="p1 p1_black cart_title">YOUR CART</p>
+                    <div id="cart">
+                        <div class="cart_table_col cart_id_col">
+                        <span class="th">#</span>
+                        <!-- <span class="td">1</span> -->
+                        <!-- <span class="cart_total"><span class="pink">TOTAL</span></span> -->
+
+                        </div>
+                        <div class="cart_table_col">
+                            <span class="th">ITEM</span>
+                            <!-- <span class="td">
+                                <img src="img/shop/food/food101.jpg" class="cart_img">
+                            </span> -->
+                        </div>
+                        <div class="cart_table_col itm_des_col">
+                            <span class="th">DESCRIPTION</span>
+                            <!-- <span class="td">Cat Whisks</span> -->
+
+                        </div>
+                        
+                        <!-- <div class="cart_table_col currency_col"> -->
+                            <!-- <span class="th">CUR</span> -->
+                            <!-- <span class="td"><span class="mono">rs</span></span> -->
+
+                        <!-- </div> -->
+                        <div class="cart_table_col cart_price_col">
+                            <span class="th"><span class="align_right">PRICE(RS)</span></span>
+                            <!-- <span class="td"><span class="cart_price pink mono">2000</span></span> -->
+                            <!-- <span class="cart_total"><span class="cart_price_total pink mono">101500</span></span> -->
+
+                        </div>
+                        <div class="cart_table_col cart_qnt_col">
+                            <span class="th">QNT</span>
+                            <!-- <span class="td">2</span> -->
+
+                        </div>  
+                        <div class="cart_table_col last_col">
+                            <span class="th"></span>
+                            <!-- <span class="td"><div class="cart_remove">X</div></span> -->
+                        </div>
+                    </div>
+                    <button class="clear_cart">CLEAR CART</button>
+                </div>
+            </div>        
+        </div>
+        <div class="empty_cart_modal">
+            <div class="empty_cart_container">
+                <h4 class="empty_cart_title">Your Cart Is Empty :(</h4>
+                <hr class="empty_title_sep">
+                <div class="empty_cart">
+                    <img src="img/icon/empty_cart.png" class="empty_cart_img">
+                </div>
+                <button class="ok_btn modal_btn">OK</button>
+            </div>
+        </div>
+        <div class="form_invalid_modal">
+            <div class="form_invalid_container">
+                <h4 class="form_invaild_title"><strong>Form:</strong> fill the required fields </h4>
+                <hr class="form_invalid_sep">
+                <p class="form_invalid_message">Make sure you have filled the form properly</p>
+                <button class="ok_btn modal_btn">OK</button>
+            </div>
+        </div>
+    <footer>
+        <p class="footer">
+            <a class="email" href="mailto:dinujaya.2019591@iit.ac.lk">dinujaya.2019591@iit.ac.lk</a>
+            <span class="separate"> ⁆⁅ </span><a class="dev_cv" href="dinujaya.html">Dinujaya Munsinghe</a>
+        </p>
+        <span class="separateLarge">|</span>
+        <p class="footer">
+            IIT ID: <span class="id">2019591</span>
+            <span class="separate"> ⁆⁅ </span> Westminster ID: <span class="id">w1790134</span>
+        </p>
+    </footer>
+        <script src="js/shop.js"></script>
+		<script src="js/common.js"></script>
+    </body>
+</html>
