@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <link rel="stylesheet" type="text/css" href="css/feedback.css">
+           <link rel="stylesheet" type="text/css" href="css/common_css.css">
+       <script src="javascript/feedback.js"></script>
+
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="topNav">
+    <a class = "pawsMatter">Paws Matter</a>
+    <a href="page.html">Home</a>
+    <a href="article1.html">Articles</a>
+    <a href="Quiz.html">Quiz</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="About.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="site%20map.html">Site map</a>
+    <div class="topNav/right">
+        <a href="shop1.html">Shop</a>
+    </div>
+</div>
+<div class="sidebar">
+    <button class="reset font_size_change" aria-label="reset font size"><img src="image/icon/reset.png" class="reset_icon" alt="reset font size"></button>
+    <button class="font_size_increase font_size_change" aria-label="increase font size" tabindex="1"><img src="image/icon/zoom_in.png" class="zoom_icon" alt="increase font size"></button>
+    <button class="font_size_decrease font_size_change" aria-label="reduce font size" tabindex="2"><img src="image/icon/zoom_out.png" class="zoom_icon" alt="decrease font size"></button>
+</div>
+
+<div class="container">
+  <div style="text-align:center">
+    <h1>YOUR FEEDBACK</h1>
+    <p>GIVE US FEEDBACK FOR YOUR </p>
+  </div>
+  <div class="row">
+    <div class="column">
+       <img src="img/dog.jpg" style="width:100%">
+	   <img src="img/feedback.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form name="form" action="/action_page.php" onsubmit="return validateForm()">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" placeholder=" Enter Your name...">
+        <label for="email">EMAIL</label>
+        <input type="text" id="email" name="email" placeholder="Enter Your email...">
+        <label for="comment">COMMENTS</label>
+        <textarea id="comments" name="comments" placeholder="Write your comment..." style="height:170px"></textarea>
+		 <p>RATE US :</p>
+           <input type="radio" id="excellent" name="rate us" value="excellent">
+           <label for="excellent">EXCELLENT</label><br><br>
+           <input type="radio" id="very good" name="rate us" value="very good">
+           <label for="very good">VERY GOOD</label><br><br>
+           <input type="radio" id="good" name="rate us" value="good">
+		   <label for="good">GOOD</label><br><br>
+           <input type="radio" id="bad" name="rate us" value="bad">
+           <label for="bad">BAD</label><br><br><br>
+
+        <input type="submit" name="submit button" value="Submit">
+		
+      </form>
+    </div>
+  </div>
+</div>
+<footer>
+    <p class="footer">
+        <a class="email" href="mailto:kasun.2019584@iit.ac.lk">kasun.2019584@iit.ac.lk</a>
+        <span class="separate"> ⁆⁅ </span><a class="dev_cv" href="cv/Manusha_CV.html">P.H.K.M.KUMARA</a>
+    </p>
+    <span class="separateLarge">|</span>
+    <p class="footer">
+        IIT ID: <span class="id">2019584</span>
+        <span class="separate"> ⁆⁅ </span> Westminster ID: <span class="id">w1790115</span>
+    </p>
+</footer>
+<script src="javascript/common.js"></script>
+
+</body>
+</html>
