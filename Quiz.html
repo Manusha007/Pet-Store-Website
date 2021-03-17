@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="css/quiz_css.css">
+    <link rel="stylesheet" type="text/css" href="css/common_css.css">
+</head>
+<body>
+<div class="topNav">
+    <a class = "pawsMatter">Paws Matter</a>
+    <a href="page.html">Home</a>
+    <a href="article1.html">Articles</a>
+    <a href="Quiz.html">Quiz</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="About.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="site%20map.html">Site map</a>
+    <div class="topNav/right">
+        <a href="shop1.html">Shop</a>
+    </div>
+</div>
+    <div class="sidebar">
+        <button class="reset font_size_change" aria-label="reset font size"><img src="image/icon/reset.png" class="reset_icon" alt="reset font size"></button>
+        <button class="font_size_increase font_size_change" aria-label="increase font size" tabindex="1"><img src="image/icon/zoom_in.png" class="zoom_icon" alt="increase font size"></button>
+        <button class="font_size_decrease font_size_change" aria-label="reduce font size" tabindex="2"><img src="image/icon/zoom_out.png" class="zoom_icon" alt="decrease font size"></button>
+    </div>
+    <div id="main">
+        <div class="quizMenu">
+            <h2 class="time" id="timeCount"></h2>
+            <h2 class="score" id="result"></h2>
+            <h1>Are You Guys Ready For This ???</h1>
+            <h2>Let's Start This...</h2>
+            <p class="description">The only thing that is more interesting than any step made by our dog is their past and the facts about them.
+                You may think you are an expert on dogs, but how much do you really know?
+                With this quiz challenge your canine expertise and find yourself as professional as your vet!
+                We are going to ask you a few well-known and unknown dog facts during this dog trivia quiz.
+                Your dog experience will be checked from the oldest race in the world to the most powerful race.
+                Take a while to sit and wait until you answer our request.
+                You wouldn't like an quick answer because you're just looking forward to going to the park.
+                Will you do as you say, or do you have to be sent back to the school of obedience?  Answer our trivia questions and find out!
+            </p>
+        </div>
+
+        <div class="start">
+            <input class="start_que" id="start_qu" type="submit" value="Start" onclick="start_Quiz()">
+        </div>
+
+        <div class="package">
+            <p class="qustion">1.Which dog breed is the favourite of The Queen of England?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_1" value="0">
+                <label>German Shepherd</label>
+                <br>
+                <input class="solution" type="radio" name="Q_1" value="1">
+                <lable class="answer" id="correct_solution_1">Pembroke Welsh Corgi</lable>
+                <br>
+                <input class="solution" type="radio" name="Q_1" value="0">
+                <label>Poodle</label>
+                <br>
+                <input class="solution" type="radio" name="Q_1" value="0">
+                <label>Golden Retriever</label>
+            </ul>
+        </div>
+        <div class="package">
+            <p class="qustion">2.What breed is Scooby Doo?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_2" value="0">
+                <label>German Shepherd</label>
+                <br>
+                <input class="solution" type="radio" name="Q_2" value="0">
+                <label>Bulldog</label>
+                <br>
+                <input class="solution" type="radio" name="Q_2" value="0">
+                <label>Rottweiler</label>
+                <br>
+                <input class="solution" type="radio" name="Q_2" value="1">
+                <lable class="answer" id="correct_solution_2">Great Dane</lable>
+            </ul>
+        </div>
+        <div class="package">
+            <p class="qustion">3.How old was the World’s oldest dog when he died?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_3" value="0">
+                <label>41</label>
+                <br>
+                <input class="solution" type="radio" name="Q_3" value="0">
+                <label>35</label>
+                <br>
+                <input class="solution" type="radio" name="Q_3" value="0">
+                <label>23</label>
+                <br>
+                <input class="solution" type="radio" name="Q_3" value="1">
+                <lable class="answer" id="correct_solution_3">29</lable>
+            </ul>
+        </div>
+        <div class="package">
+            <p class="qustion">4.Which breed of dog has a black tongue?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_4" value="1">
+                <lable class="answer" id="correct_solution_4">Chow Chow</lable>
+                <br>
+                <input class="solution" type="radio" name="Q_4" value="0">
+                <label>Dobermann</label>
+                <br>
+                <input class="solution" type="radio" name="Q_4" value="0">
+                <label>Basset Hound</label>
+                <br>
+                <input class="solution" type="radio" name="Q_4" value="0">
+                <label>Bloodhound</label>
+            </ul>
+        </div>
+        <div class="package">
+            <p class="qustion">5.How many teeth does a fully grown adult dog have?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_5" value="0">
+                <label>37</label>
+                <br>
+                <input class="solution" type="radio" name="Q_5" value="0">
+                <label>32</label>
+                <br>
+                <input class="solution" type="radio" name="Q_5" value="1">
+                <lable class="answer" id="correct_solution_5">42</lable>
+                <br>
+                <input class="solution" type="radio" name="Q_5" value="0">
+                <label>45</label>
+            </ul>
+        </div>
+        <div class="package">
+            <p class="qustion">6.What is the name of the smallest dog breed?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_6" value="0">
+                <label>Pug</label>
+                <br>
+                <input class="solution" type="radio" name="Q_6" value="1">
+                <lable class="answer" id="correct_solution_6">Chihuahua</lable>
+                <br>
+                <input class="solution" type="radio" name="Q_6" value="0">
+                <label>Poodle</label>
+                <br>
+                <input class="solution" type="radio" name="Q_6" value="0">
+                <label>Basenji</label>
+            </ul>
+        </div>
+        <div class="package">
+            <p class="qustion">7.Which medical condition affects dogs the most?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_7" value="1">
+                <lable class="answer" id="correct_solution_7">Obesity</lable>
+                <br>
+                <input class="solution" type="radio" name="Q_7" value="0">
+                <label>Arthritis</label>
+                <br>
+                <input class="solution" type="radio" name="Q_7" value="0">
+                <label>Hypertension</label>
+                <br>
+                <input class="solution" type="radio" name="Q_7" value="0">
+                <label>Anxiety</label>
+            </ul>
+        </div>
+        <div class="package">
+            <p class="qustion">8.Which breed is considered the world's rarest?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_8" value="0">
+                <label>Airedale terrier</label>
+                <br>
+                <input class="solution" type="radio" name="Q_8" value="0">
+                <label>Saluki</label>
+                <br>
+                <input class="solution" type="radio" name="Q_8" value="1">
+                <lable class="answer" id="correct_solution_8">Cesky terrier</lable>
+                <br>
+                <input class="solution" type="radio" name="Q_8" value="0">
+                <label>French bulldog</label>
+            </ul>
+        </div>
+        <div class="package">
+            <p class="qustion">9.Which human organ do dogs lack?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_9" value="0">
+                <label>Prostate</label>
+                <br>
+                <input class="solution" type="radio" name="Q_9" value="1">
+                <lable class="answer" id="correct_solution_9">Appendix</lable>
+                <br>
+                <input class="solution" type="radio" name="Q_9" value="0">
+                <label>Uterus</label>
+                <br>
+                <input class="solution" type="radio" name="Q_9" value="0">
+                <label>Esophagus</label>
+            </ul>
+        </div>
+        <div class="package">
+            <p class="qustion">10.Which dog breed has six toes on each paw?</p>
+            <ul>
+                <input class="solution" type="radio" name="Q_10" value="0">
+                <label>Boston Terrier</label>
+                <br>
+                <input class="solution" type="radio" name="Q_10" value="0">
+                <label>Shar Pei</label>
+                <br>
+                <input class="solution" type="radio" name="Q_10" value="0">
+                <label>Bichon Frise</label>
+                <br>
+                <input class="solution" type="radio" name="Q_10" value="1">
+                <lable class="answer" id="correct_solution_10">Norwegian Lundehund</lable>
+            </ul>
+        </div>
+
+        <div class="Buttons">
+            <input class="submitQuiz" id="submit_button" onclick="submit_quiz()" type="submit" value="Submit">
+            <input class="resetQuiz" id="reset_Button" onclick="reset_quiz()" type="submit" value="Reset">
+        </div>
+    </div>
+    <footer>
+        <p class="footer">
+            <a class="email" href="mailto:manusha.2019604@iit.ac.lk">manusha.2019604@iit.ac.lk</a>
+            <span class="separate"> ⁆⁅ </span><a class="dev_cv" href="cv/Manusha_CV.html">Manusha Pamoda</a>
+        </p>
+        <span class="separateLarge">|</span>
+        <p class="footer">
+            IIT ID: <span class="id">2019604</span>
+            <span class="separate"> ⁆⁅ </span> Westminster ID: <span class="id">w1790142</span>
+        </p>
+    </footer>
+<script src=""></script>
+<script type="text/javascript" language="JavaScript" src="javascript/quiz.js"></script>
+<script src="javascript/common.js"></script>
+</body>
+</html>
